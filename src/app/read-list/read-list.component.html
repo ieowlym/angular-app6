@@ -1,11 +1,4 @@
-<div class="container mt-3">
-  <button class="btn btn-dark" type="button" (click)="getReadings()">
-    Get Read List
-  </button>
-
-  <div *ngFor="let read of rList">
-  <p>
-    Name: {{user.name}}, Type: {{user.type}}
-  </p>
-</div>
+<div class="watch container">
+  <h1>Read List</h1>
+    <app-readings [dataService]='ds' ></app-readings>
 </div>

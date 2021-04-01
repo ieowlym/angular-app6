@@ -1,0 +1,11 @@
+<div class="container m-3">
+  <button class="btn btn-dark" type="button" (click)="getReadings()">
+    Get Read List
+  </button>
+
+  <div *ngFor="let read of rList">
+  <p>
+    Name: {{read.name}}, Type: {{read.type}}
+  </p>
+</div>
+</div>

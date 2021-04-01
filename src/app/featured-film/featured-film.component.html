@@ -1,0 +1,13 @@
+<div class="container m-3">
+  <button class="btn btn-dark" type="button" (click)="getFeaturedFilms()">
+    Get Watch List (Films)
+  </button>
+
+  <div *ngFor="let films of ffList">
+  <p>
+    Name: {{films.name}},
+    <br/>
+    Author: {{films.author}}
+  </p>
+  </div>
+</div>

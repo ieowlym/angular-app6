@@ -10,8 +10,8 @@ import {LoggingService} from "./logging.service";
 export class DataService {
 
   constructor(
-    private loggingService: LoggingService) {
-  }
+    //private loggingService: LoggingService
+  ) {}
 
   getShortFilms() {
     let sfList:Short[];
@@ -24,12 +24,12 @@ export class DataService {
       new Short(6,"The Queen's Gambit",1,7),
       new Short(7,"JoJo’s Bizarre Adventure",5,39)
     ];
-    this.loggingService.log('List of shorts: ' + sfList);
+//    this.loggingService.log('List of shorts: ' + sfList);
 
     return sfList;
   }
 
-  getFeatureFilms() {
+  getFeaturedFilms() {
     let ffList:Feature[];
     ffList=[
       new Feature(1,"Tenki no ko","Makoto Sinkai","animated"),
@@ -37,7 +37,7 @@ export class DataService {
       new Feature(3,"2+1","Yugo Jelen","comedy"),
       new Feature(4,"The Foreigner","Jackie Chan","action thriller")
     ];
-    this.loggingService.log('List of films: ' + ffList);
+//    this.loggingService.log('List of films: ' + ffList);
 
     return ffList;
   }
@@ -53,7 +53,7 @@ export class DataService {
       new Reading(6,"Love or Hate","manga"),
       new Reading(2,"True Beauty","webtoon")
     ];
-    this.loggingService.log('List of readings: ' + rList);
+//    this.loggingService.log('List of readings: ' + rList);
 
     return rList;
   }

@@ -1,0 +1,13 @@
+<div class="container m-3">
+  <button class="btn btn-dark" type="button" (click)="getShortFilms()">
+    Get Watch List (Serials)
+  </button>
+
+  <div *ngFor="let short of sfList">
+  <p>
+    Name: {{short.name}},
+    <br/>
+    Seasons: {{short.seasons}}, episodes {{short.episodes}}
+  </p>
+  </div>
+</div>
